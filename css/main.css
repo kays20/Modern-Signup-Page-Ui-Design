@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    font-family: Ubuntu;
+    place-items: center;
+    margin: 0px;
+    padding: 0px 32px;
+    animation: 6s linear 0s infinite alternate none running rotate;
+}
+
+.circle {
+    position: fixed;
+    top: -50vmin;
+    left: -50vmin;
+    width: 100vmin;
+    height: 100vmin;
+    border-radius: 47% 53% 61% 39% / 45% 51% 49% 50%;
+    background: rgb(101, 200, 255);
+}
+
+.circle::after {
+    content: "";
+    position: inherit;
+    right: -50vmin;
+    bottom: -55vmin;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: rgb(20, 61, 129);
+}
+
+.card {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 100px 100px;
+    overflow: hidden;
+    margin: 0px 20px;
+    padding: 160px 30px 38px;
+    border-radius: 1.2rem;
+    background: rgb(255, 255, 255);
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: -880px;
+    left: 50%;
+    width: 1000px;
+    height: 1000px;
+    transform: translate(-50%, 0px);
+    background: rgb(33, 108, 231);
+    border-radius: 50%;
+}
+
+.card .logo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    height: 64px;
+    width: 64px;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%, 0px);
+    border-radius: 50%;
+}
+
+.card .logo i {
+    font-size: 50px;
+    color: rgb(33, 108, 231);
+    font-weight: 500;
+}
+
+.card > h2 {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(42, 52, 68);
+    margin: 0px 0px 30px;
+}
+
+form {
+  display: grid;
+  grid-gap: 18px;
+}
+
+.form > input {
+    font-family: inherit;
+    color: rgb(17, 39, 76);
+    padding: 0px 24px;
+    transition: all 0.375s ease 0s;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(232, 232, 232);
+    border-image: initial;
+}
+
+.form > input, .form > button {
+    width: 100%;
+    height: 50px;
+    border-radius: 20px;
+}
+
+
+
+.form > input:hover {
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-image: initial;
+}
+
+.form > button {
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    color: rgb(249, 249, 249);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 0px 16px;
+    background: rgb(33, 108, 231);
+    transition: all 0.375s ease 0s;
+    outline: none;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.form > button:hover {
+    color: rgb(255, 255, 255);
+    background: rgb(20, 61, 129);
+}
+
+.card > footer {
+    color: rgb(124, 124, 124);
+}
+
+
+.card > footer > a {
+    color: rgb(33, 108, 231);
+    transition: all 0.375s ease 0s;
+}
+
+.card > footer > a:hover {
+    color: rgb(20, 61, 129);
+}
+
+@media (min-width: 500px) {
+  body {
+    padding: 0;
+  }
+  .card {
+    margin: 0;
+    width: 360px;
+  }
+}
