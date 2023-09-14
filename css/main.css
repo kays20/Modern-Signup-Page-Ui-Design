@@ -1,7 +1,7 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -88,8 +88,8 @@ body {
 }
 
 form {
-  display: grid;
-  grid-gap: 18px;
+    display: grid;
+    grid-gap: 18px;
 }
 
 .form > input {
@@ -159,11 +159,11 @@ form {
 }
 
 @media (min-width: 500px) {
-  body {
+    body {
     padding: 0;
-  }
-  .card {
+    }
+    .card {
     margin: 0;
     width: 360px;
-  }
+    }
 }
